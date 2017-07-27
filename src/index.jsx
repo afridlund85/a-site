@@ -2,9 +2,10 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { AppContainer } from 'react-hot-loader'
 
-import Router from './Router'
+import 'normalize.css'
+import 'milligram/dist/milligram.min.css'
 
-import './assets/css/normalize.css'
+import Router from './Router'
 
 const render = Component => {
   ReactDOM.render(

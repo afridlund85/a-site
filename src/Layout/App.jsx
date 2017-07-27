@@ -7,7 +7,7 @@ import Footer from './Footer'
 import './app.scss'
 
 const App = ({children}) => (
-  <div id="wrap">
+  <div>
     <Header/>
     <Main>
       {children}

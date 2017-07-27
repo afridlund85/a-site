@@ -5,7 +5,7 @@ import './header.scss'
 
 const Header = () => (
   <div id="header">
-    <h1>Afridlund</h1>
+    <h1>Header</h1>
     <Nav/>
   </div>
 )
