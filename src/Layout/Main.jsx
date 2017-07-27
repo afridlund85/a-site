@@ -5,7 +5,7 @@ import './main.scss'
 
 const Main = ({children}) => (
   <div id="main">
-    <div id="content">
+    <div className="container">
       {children}
     </div>
   </div>

@@ -7,11 +7,25 @@ const routes = [
     exact: true,
     component: Home,
     link: {
-      title: 'Home'
+      title: 'Start'
     }
   },
   {
-    path: '/about',
+    path: '/priser',
+    component: About,
+    link: {
+      title: 'Priser'
+    }
+  },
+  {
+    path: '/galleri',
+    component: About,
+    link: {
+      title: 'Galleri'
+    }
+  },
+  {
+    path: '/om',
     component: About,
     link: {
       title: 'About'
