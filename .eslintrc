@@ -3,10 +3,10 @@
   "rules": {
     "indent": [ 2, 2, { "SwitchCase": 1 }],
     "quotes": [ 2, "single" ],
-    "linebreak-style": [ 2, "unix" ],
+    "linebreak-style": [ 1, "unix" ],
     "semi": [ 2, "never" ],
     "no-class-assign": 0,
-    "no-console": [ 2, { allow: ["warn", "error"] }],
+    "no-console": [ 1, { allow: ["warn", "error"] }],
     "react/jsx-uses-react": 1,
     "react/jsx-uses-vars": 1,
   },

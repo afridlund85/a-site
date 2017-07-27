@@ -5,12 +5,12 @@ import NavLi from './NavLi'
 import './nav.scss'
 
 const props = {
-  activeClass: PropTypes.string.isRequired
+  activeClass: PropTypes.string.isRequired,
+  handleClick: PropTypes.func.isRequired
 }
 
-const Nav = ({activeClass}) => (
-  <div id="nav" className={activeClass}>
-    <h2>Navigation</h2>
+const Nav = ({activeClass, handleClick}) => (
+  <div id="nav" className={activeClass} onClick={handleClick}>
     <ul>
       {routes
         .filter(route => !!route.link)

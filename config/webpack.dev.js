@@ -12,6 +12,11 @@ const devConfig = {
     path: rootPath('public'),
     publicPath: ''
   },
+  watchOptions: {
+    aggregateTimeout: 300,
+    poll: 500,
+    ignored: /node_modules/
+  },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NamedModulesPlugin(),
