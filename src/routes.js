@@ -1,5 +1,6 @@
 import Home from './Home/Home'
 import About from './About/About'
+import Contact from './Contact/Contact'
 
 const routes = [
   {
@@ -28,7 +29,14 @@ const routes = [
     path: '/om',
     component: About,
     link: {
-      title: 'About'
+      title: 'Om mig'
+    }
+  },
+  {
+    path: '/kontakt',
+    component: Contact,
+    link: {
+      title: 'Kontakt'
     }
   }
 ]

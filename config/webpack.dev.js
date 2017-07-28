@@ -22,8 +22,7 @@ const devConfig = {
     new webpack.NamedModulesPlugin(),
     new HtmlWebpackPlugin({
       template: rootPath('src/index.html'),
-      inject: 'body',
-      favicon: rootPath('src/assets/images/nodejs.png')
+      inject: 'body'
     }),
     new ExtractTextPlugin('css/styles.css')
   ],

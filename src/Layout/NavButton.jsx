@@ -6,7 +6,11 @@ const props = {
 }
 
 const NavButton = ({handleClick}) => (
-  <button onClick={handleClick}></button>
+  <button onClick={handleClick}>
+    <span className="menu-bar"></span>
+    <span className="menu-bar"></span>
+    <span className="menu-bar"></span>
+  </button>
 )
 
 NavButton.propTypes = props

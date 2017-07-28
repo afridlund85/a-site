@@ -1,0 +1,16 @@
+.section {
+  h1 {
+    text-align: center;
+    span {
+      text-align: center;
+      font-size:1.75rem;
+    }
+  }
+}
+
+
+@media (min-width: 80.0rem) {
+  .home-header {
+    height:50rem;
+  }
+}

@@ -4,15 +4,16 @@ $medium: #00183E;
 $light: #6994F0;
 $purple: #45488B;
 $yellow: #F2EA7E;
-
 body {
-  font-family: 'Source Sans Pro', sans-serif;
   color: $dark;
-  background-color: $yellow;
-  h1,h2,h3,h4,h5,h6 {
-    font-family: 'Inknut Antiqua', serif;
+  background-color: $dark;
+  h1,h2,h3,h4,h5,h6{
+    color: $purple;
   }
-  #wrap {
-    width:100%;
+  #footer {
+    color: #F2EA7E;
+    .container {
+      padding: 4rem 2rem;
+    }
   }
 }

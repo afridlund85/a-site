@@ -20,10 +20,10 @@ class Header extends Component {
   render() {
     let activeClass = this.state.show ? 'active' : ''
     return (
-      <div id="header" className={activeClass}>
+      <div id="header">
         <div className="container">
           <h1>
-            <a href="/">Alexander Hall Photography</a>
+            <a href="/">A. Hall Photography</a>
           </h1>
           <NavButton handleClick={this.handleToggle} />
           <Nav activeClass={activeClass} handleClick={this.handleToggle}/>

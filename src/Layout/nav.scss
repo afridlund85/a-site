@@ -6,25 +6,25 @@
   height: 100%;
   opacity: 0;
   background-color: rgba(0,0,0,0.5);
-  transition: opacity .3s ease-in-out .15s, width .3s ease-in-out .6s;
+  transition: opacity .3s ease-in-out .15s, width .2s ease-in-out .6s;
   &.active{
     opacity: 1;
     width:100%;
     transition: opacity .3s ease-in-out 0s, width .0s ease-in-out 0s;
     ul {
       width:75%;
-      border-right: 0.1rem solid rgba(0,0,0,.5);
+      border-right: 0.1rem solid rgba(0,0,0,.25);
     }
   }
   ul {
     display:block;
     width:0;
     height:100%;
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgba(255,255,255,0.9);
     list-style: none;
     overflow-x: hidden;
     border-right: none;
-    transition: width .3s;
+    transition: width .2s;
     transition-timing-function: ease-in-out;
     li {
       border-bottom: 0.1rem solid rgba(0,0,0,.5);
@@ -34,7 +34,7 @@
       }
       a {
         display: block;
-        padding: 1rem;
+        padding: 2rem;
         text-decoration: none;
         color:black;
         &.active {

@@ -29,7 +29,7 @@ module.exports = {
       },
       {
         test: /\.(jpe?g|png|svg)$/,
-        use: 'url-loader?limit=10000&name=[name]-[hash].[ext]&publicPath=&outputPath=assets/images/'
+        use: 'url-loader?limit=10000&name=[name]-[hash].[ext]&publicPath=/&outputPath=assets/images/'
       }
     ]
   },
