@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import Header from './../components/Header'
-import Main from './Main'
 import Footer from './Footer'
 
 import './../sass/app.scss'
@@ -10,9 +9,7 @@ import './../sass/app.scss'
 const App = ({children}) => (
   <div>
     <Header/>
-    <Main>
-      {children}
-    </Main>
+    {children}
     <Footer/>
   </div>
 )

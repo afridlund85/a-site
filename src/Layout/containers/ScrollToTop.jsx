@@ -10,7 +10,7 @@ class ScrollToTop extends Component {
   }
   componentDidUpdate(prevProps) {
     if (this.props.location !== prevProps.location) {
-      this.scrollUp(0, 250)
+      this.scrollUp(0, 100)
     }
   }
   scrollUp(targetY, duration) {
