@@ -1,19 +1,23 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
+
 import routes from './routes'
-import App from './Layout/App'
+import App from './Layout'
+import ScrollToTop from './Layout/containers/ScrollToTop'
 
 const Router = () => (
   <BrowserRouter>
-    <Switch>
-      {routes.map(({path, exact, component: Component}) => (
-        <Route key={path} path={path} exact={exact} render={(props) => (
-          <App {...props}>
-            <Component {...props}/>
-          </App>
-        )} />
-      ))}
-    </Switch>
+    <ScrollToTop>
+      <App>
+        <Switch>
+          {routes.map(({path, exact, component: Component}) => (
+            <Route key={path} path={path} exact={exact} render={(props) => (
+                <Component {...props}/>
+            )} />
+          ))}
+        </Switch>
+      </App>
+    </ScrollToTop>
   </BrowserRouter>
 )
 

@@ -1,10 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Header from './Header'
+
+import Header from './../components/Header'
 import Main from './Main'
 import Footer from './Footer'
 
-import './app.scss'
+import './../sass/app.scss'
 
 const App = ({children}) => (
   <div>

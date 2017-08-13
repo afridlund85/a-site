@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import './main.scss'
+import './../sass/main.scss'
 
 const Main = ({children}) => (
   <div id="main">

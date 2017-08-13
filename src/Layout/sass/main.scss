@@ -1,0 +1,12 @@
+@import 'vars';
+#main {
+  padding: 5rem 0 0 0;
+  background-color: $gray-50;
+  .section {
+    padding: 5rem 0;
+    background-color: $gray-50;
+    &:nth-child(even) {
+      background-color: $bluegray-100;
+    }
+  }
+}

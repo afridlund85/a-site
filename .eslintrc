@@ -3,7 +3,7 @@
   "rules": {
     "indent": [ 2, 2, { "SwitchCase": 1 }],
     "quotes": [ 2, "single" ],
-    "linebreak-style": [ 1, "unix" ],
+    "linebreak-style": [ 0, "unix" ],
     "semi": [ 2, "never" ],
     "no-class-assign": 0,
     "no-console": [ 1, { allow: ["warn", "error"] }],
