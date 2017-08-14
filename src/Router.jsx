@@ -23,7 +23,7 @@ const Router = () => (
                     <Route key={path} path={path} exact={exact} component={Component} />
                 ))}
               </Switch>
-          </CSSTransition>
+            </CSSTransition>
           </TransitionGroup>
         </App>
       </ScrollToTop>
