@@ -1,6 +1,7 @@
 import Home from './Home/Home'
 import About from './About/About'
 import Contact from './Contact/Contact'
+import Prices from './Prices/Prices'
 
 const routes = [
   {
@@ -13,7 +14,7 @@ const routes = [
   },
   {
     path: '/priser',
-    component: About,
+    component: Prices,
     link: {
       title: 'Priser'
     }

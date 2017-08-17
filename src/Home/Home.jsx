@@ -10,7 +10,6 @@ const Home = () => {
             <span>Fotograf</span><br/>
             Alexander Hall
           </h1>
-
         </div>
       </div>
       <div className="section">

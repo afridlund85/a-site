@@ -1,4 +1,4 @@
-@import 'vars';
+@import './../../sass/vars';
 
 body {
   color: $gray-900;
@@ -18,9 +18,15 @@ body {
   }
   .section {
     padding: 5rem 0;
-    background-color: $gray-50;
+    background: $gray-50;
+    background: linear-gradient(135deg, $gray-50 0%,$gray-100 100%);
+    &:first-child{
+      padding: 3em 0;
+      background: $gray-50;
+    }
     &:nth-child(even) {
-      background-color: $bluegray-100;
+      background: $bluegray-50;
+      background: linear-gradient(135deg, $bluegray-50 0%,$bluegray-100 100%);
     }
   }
   .fade-appear,

@@ -1,0 +1,39 @@
+@import './../sass/vars';
+.prices {
+  table {
+    border:1px solid $bluegray-600;
+    border-radius: 3px;
+    tbody {
+      tr{
+        background: $bluegray-50;
+        &:nth-child(even){
+          background: $gray-100;
+        }
+        td {
+          padding: 0.75em 1.5em
+        }
+      }
+    }
+    thead {
+      color: $gray-50;
+      tr {
+        background: $bluegray-600;
+        th {
+          text-align: center;
+        }
+      }
+    }
+    tfoot {
+      color: $gray-50;
+      text-align: center;
+      font-weight: bold;
+      tr {
+        background: $bluegray-600;
+        td {
+          border:none;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
