@@ -1,6 +1,8 @@
 @import './../../sass/vars';
 
 #footer {
-  color: $gray-100;
+  background: $bluegray-600;
+  background: linear-gradient(135deg, $bluegray-700 0%,$bluegray-500 100%);
+  color: $gray-50;
   padding: 5rem 0;
 }

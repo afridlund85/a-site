@@ -12,7 +12,7 @@
     height: 3rem;
     width: 3.25rem;
     .bar{
-      background-color: #F2EA7E;
+      background-color: $gray-50;
       display: block;
       height: 0.2rem;
       margin-bottom: 0.4rem;
@@ -60,7 +60,7 @@
       transform: translateX(-100%);
     }
     li {
-      border-bottom: 0.1rem solid rgba(0,0,0,.5);
+      border-bottom: 0.1rem solid $bluegray-600;
       margin: 0;
       &:last-child {
         border-bottom:none;
@@ -69,8 +69,11 @@
         display: block;
         padding: 2rem;
         text-decoration: none;
+        color: $bluegray-600;
         &.active {
-          color: red;
+          color: $gray-50;
+          background-color: $bluegray-600;
+          background: linear-gradient(135deg, $bluegray-600 0%,$bluegray-700 100%);
         }
       }
     }

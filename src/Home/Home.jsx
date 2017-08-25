@@ -1,15 +1,13 @@
 import React from 'react'
+
 import './home.scss'
 
 const Home = () => {
   return(
-    <div>
-      <div className="section">
+    <div className="home">
+      <div className="section header">
         <div className="container">
-          <h1>
-            <span>Fotograf</span><br/>
-            Alexander Hall
-          </h1>
+          <h1><em>Fotograf</em>Alexander Hall</h1>
         </div>
       </div>
       <div className="section">

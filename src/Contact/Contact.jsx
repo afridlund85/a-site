@@ -2,10 +2,14 @@ import React from 'react'
 import './contact.scss'
 
 const Contact = () => (
-  <div>
-    <div className="section">
+  <div className="contact">
+    <div className="section header">
       <div className="container">
         <h2>Kontakt</h2>
+      </div>
+    </div>
+    <div className="section">
+      <div className="container">
         <div className="row">
           <div className="column">
             <h3>Telefon</h3>

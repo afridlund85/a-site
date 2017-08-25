@@ -1,42 +1,20 @@
 import React from 'react'
 
+import TableHeader from './TableHeader'
+import TableFooter from './TableFooter'
+import TableRow from './TableRow'
+
 const HalfDay = () => (
   <table>
-    <thead>
-      <tr>
-        <th colSpan="2">Bröllop Halvdag</th>
-      </tr>
-    </thead>
-    <tfoot>
-      <tr>
-        <td colSpan="2">10 000kr</td>
-      </tr>
-    </tfoot>
+    <TableHeader title="Bröllop Halvdag" />
+    <TableFooter title="10 000kr"/>
     <tbody>
-      <tr>
-        <td><img src="/images/select.png"/></td>
-        <td><strong>4 timmars</strong> fotografering</td>
-      </tr>
-      <tr>
-        <td><img src="/images/select.png"/></td>
-        <td>Minst <strong>200</strong> redigerade bilder på Dropbox och USB-minne</td>
-      </tr>
-      <tr>
-        <td><img src="/images/select.png"/></td>
-        <td>Planeringsträff</td>
-      </tr>
-      <tr>
-        <td><img src="/images/select.png"/></td>
-        <td>Porträttfotografering utomhus</td>
-      </tr>
-      <tr>
-        <td><img src="/images/select.png"/></td>
-        <td>Vigselfotografering</td>
-      </tr>
-      <tr>
-        <td><img src="/images/select.png"/></td>
-        <td>Mingelfotografering</td>
-      </tr>
+      <TableRow><strong>4 timmars</strong> fotografering</TableRow>
+      <TableRow>Minst <strong>200</strong> redigerade bilder på Dropbox och USB-minne</TableRow>
+      <TableRow>Planeringsträff</TableRow>
+      <TableRow>Porträttfotografering utomhus</TableRow>
+      <TableRow>Vigselfotografering</TableRow>
+      <TableRow>Mingelfotografering</TableRow>
     </tbody>
   </table>
 )

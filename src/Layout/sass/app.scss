@@ -6,26 +6,33 @@ body {
   h1,h2,h3,h4,h5,h6 {
     color: $bluegray-700;
   }
+  a {
+    color: $blue-800;
+  }
 }
 
 .main {
   padding: 5rem 0 0 0;
   background-color: $gray-50;
   overflow:hidden;
-  &>div {
-    position: absolute;
-    width:100%;
-  }
   .section {
-    padding: 5rem 0;
-    background: $gray-50;
-    background: linear-gradient(135deg, $gray-50 0%,$gray-100 100%);
-    &:first-child{
-      padding: 3em 0;
-      background: $gray-50;
+    padding: 3rem 0;
+    background-color: $blue-50;
+    &.header{
+      padding: 6rem 0;
+      background-color: $gray-50;
+      text-align: center;
+      h1, h2 {
+        margin: 0;
+      }
+      em {
+        display: block;
+        text-align: center;
+        font-size: 2.25rem;
+      }
     }
     &:nth-child(even) {
-      background: $bluegray-50;
+      background-color: $bluegray-50;
       background: linear-gradient(135deg, $bluegray-50 0%,$bluegray-100 100%);
     }
   }
@@ -54,4 +61,19 @@ body {
     opacity: 0;
     transform: translateX(100%);
   }
+}
+
+@media (min-width: 40.0rem) {
+  .main {
+    .section {
+      padding: 9rem 0;
+      &.header{
+        padding: 12rem 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 80.0rem) {
+
 }

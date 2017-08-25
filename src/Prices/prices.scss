@@ -1,5 +1,22 @@
 @import './../sass/vars';
+
 .prices {
+  .header{
+    h1{
+      color: $gray-50;
+      text-shadow: 1px 1px 5px $gray-700;
+      font-size: 5.55rem;
+    }
+    em {
+      color: $gray-50;
+      text-shadow: 1px 1px 5px $gray-700;
+      font-size: 1.25rem !important;
+    }
+    background-image: url('./../assets/images/tmp3.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   table {
     border:1px solid $bluegray-600;
     border-radius: 3px;
@@ -10,7 +27,7 @@
           background: $gray-100;
         }
         td {
-          padding: 0.75em 1.5em
+          padding: 0.75em 0.75em 0.75em 3em
         }
       }
     }

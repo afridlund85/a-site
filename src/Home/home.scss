@@ -1,16 +1,15 @@
-.section {
-  h1 {
-    text-align: center;
-    span {
-      text-align: center;
-      font-size:1.75rem;
+@import './../sass/vars';
+
+.home {
+  .header{
+    h1{
+      color: $gray-50;
+      text-shadow: 1px 1px 5px $gray-700;
+      font-size: 5.55rem;
     }
-  }
-}
-
-
-@media (min-width: 80.0rem) {
-  .home-header {
-    height:50rem;
+    background-image: url('./../assets/images/home.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }

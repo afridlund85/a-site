@@ -7,10 +7,9 @@ import './prices.scss'
 const Prices = () => {
   return(
     <div className="prices">
-      <div className="section">
+      <div className="section header">
         <div className="container">
           <h1>Priser</h1>
-          <em>Alla priser är inklusive moms.</em>
         </div>
       </div>
       <Weddings/>
