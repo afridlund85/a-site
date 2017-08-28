@@ -2,54 +2,28 @@
 
 .prices {
   .header{
-    h1{
-      color: $gray-50;
-      text-shadow: 1px 1px 5px $gray-700;
-      font-size: 5.55rem;
-    }
-    em {
-      color: $gray-50;
-      text-shadow: 1px 1px 5px $gray-700;
-      font-size: 1.25rem !important;
-    }
     background-image: url('./../assets/images/tmp3.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
   }
-  table {
+  ul {
     border:1px solid $bluegray-600;
     border-radius: 3px;
-    tbody {
-      tr{
-        background: $bluegray-50;
-        &:nth-child(even){
-          background: $gray-100;
-        }
-        td {
-          padding: 0.75em 0.75em 0.75em 3em
-        }
+    list-style:none;
+    li {
+      background: $bluegray-50;
+      margin:0;
+      padding: 0.75rem;
+      &:nth-child(even){
+        background: $gray-100;
       }
-    }
-    thead {
-      color: $gray-50;
-      tr {
+      &.list-header,
+      &.list-footer{
         background: $bluegray-600;
-        th {
-          text-align: center;
-        }
-      }
-    }
-    tfoot {
-      color: $gray-50;
-      text-align: center;
-      font-weight: bold;
-      tr {
-        background: $bluegray-600;
-        td {
-          border:none;
-          text-align: center;
-        }
+        color: $gray-50;
+        text-align: center;
+        font-weight: bold;
       }
     }
   }

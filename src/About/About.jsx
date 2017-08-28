@@ -12,7 +12,7 @@ const About = () => (
   <div className="about">
     <div className="section header">
       <div className="container">
-        <h2>Om mig</h2>
+        <h1>Om mig</h1>
       </div>
     </div>
     <div className="section">

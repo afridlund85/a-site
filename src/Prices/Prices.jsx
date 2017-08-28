@@ -1,6 +1,9 @@
 import React from 'react'
 
 import Weddings from './Weddings/'
+import Portraits from './Portraits/'
+import Business from './Business/'
+import Prints from './Prints/'
 
 import './prices.scss'
 
@@ -13,6 +16,9 @@ const Prices = () => {
         </div>
       </div>
       <Weddings/>
+      <Portraits />
+      <Business />
+      <Prints />
     </div>
   )
 }

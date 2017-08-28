@@ -3,7 +3,7 @@
 #header {
   position: fixed;
   width: 100%;
-  height: auto;
+  height: 50px;
   top: 0;
   left: 0;
   background: $bluegray-600;
@@ -21,8 +21,26 @@
   }
 }
 
+@media (min-width: 40.0rem) {
+  #header {
+    height:75px;
+    padding: 2rem 0;
+    #logo {
+      h1 {
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
 @media (min-width: 80.0rem) {
   #header {
-
+    height:100px;
+    padding: 3rem 0;
+    #logo {
+      h1 {
+        font-size: 4rem;
+      }
+    }
   }
 }
