@@ -9,35 +9,40 @@ const routes = [
     exact: true,
     component: Home,
     link: {
-      title: 'Start'
+      title: 'Start',
+      icon: 'home'
     }
   },
   {
     path: '/priser',
     component: Prices,
     link: {
-      title: 'Priser'
+      title: 'Priser',
+      icon: 'usd'
     }
   },
   {
     path: '/galleri',
     component: About,
     link: {
-      title: 'Galleri'
+      title: 'Galleri',
+      icon: 'camera'
     }
   },
   {
     path: '/om',
     component: About,
     link: {
-      title: 'Om mig'
+      title: 'Om mig',
+      icon: 'info'
     }
   },
   {
     path: '/kontakt',
     component: Contact,
     link: {
-      title: 'Kontakt'
+      title: 'Kontakt',
+      icon: 'envelope-o'
     }
   }
 ]

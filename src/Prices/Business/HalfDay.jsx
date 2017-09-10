@@ -2,12 +2,12 @@ import React from 'react'
 
 const HalfDay = () => (
   <ul>
-    <li className="list-header">Halvdag</li>
-
+    <li className="price-list-header">
+      <h3>Halvdag</h3>
+      <div>6 000 kr</div>
+    </li>
     <li>4 timmars fotografering</li>
     <li>Samtliga för er intressanta bilder redigerade på Dropbox</li>
-
-    <li className="list-footer">6 000 kr</li>
   </ul>
 )
 export default HalfDay

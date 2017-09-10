@@ -28,17 +28,26 @@ const Contact = () => (
         <div className="row">
           <div className="column">
             <p>
-              <a href="https://www.facebook.com/AlexanderHallPhoto" target="_blank">Facebook</a>
+              <a href="https://www.facebook.com/AlexanderHallPhoto" target="_blank">
+                <i className="fa fa-facebook-official" aria-hidden="true"></i>
+                Facebook
+              </a>
             </p>
           </div>
           <div className="column">
             <p>
-              <a href="http://instagram.com/kaptenhall" target="_blank">Instagram</a>
+              <a href="http://instagram.com/kaptenhall" target="_blank">
+                <i className="fa fa-instagram" aria-hidden="true"></i>
+                Instagram
+              </a>
             </p>
           </div>
           <div className="column">
             <p>
-              <a href="http://alwayspreparedforadventure.tumblr.com/" target="_blank">Tumblr</a>
+              <a href="http://alwayspreparedforadventure.tumblr.com/" target="_blank">
+                <i className="fa fa-tumblr-square" aria-hidden="true"></i>
+                Tumblr
+              </a>
             </p>
           </div>
         </div>

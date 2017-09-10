@@ -1,10 +1,18 @@
-@import './../sass/vars';
+@import './../vars';
 
 .home {
   .header{
-    background-image: url('./../assets/images/home.jpg');
+    background-image: url('./../assets/images/home-mobile.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+}
+
+@media (min-width: 80.0rem) {
+  .home {
+    .header{
+      background-image: url('./../assets/images/home.jpg');
+    }
   }
 }

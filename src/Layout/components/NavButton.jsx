@@ -2,11 +2,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const NavButton = ({handleClick}) => (
-  <button className="nav-button" onClick={handleClick}>
-    <span className="bar"></span>
-    <span className="bar"></span>
-    <span className="bar"></span>
-  </button>
+  <div className="nav-button" onClick={handleClick}>
+    <div className="burger">
+      <span className="bar"></span>
+      <span className="bar"></span>
+      <span className="bar"></span>
+    </div>
+  </div>
 )
 
 NavButton.propTypes = {

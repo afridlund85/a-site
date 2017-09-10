@@ -6,6 +6,9 @@ const Weddings = () => (
   <div className="section">
     <div className="container">
       <div className="row">
+        <h2>Bröllop</h2>
+      </div>
+      <div className="row">
         <div className="column">
           <HalfDay/>
         </div>

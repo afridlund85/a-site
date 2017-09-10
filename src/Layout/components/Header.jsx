@@ -7,12 +7,8 @@ import '../sass/header.scss'
 
 const Header = () => (
   <header id="header">
-    <div className="container">
-      <div className="row">
-        <Logo/>
-        <NavContainer/>
-      </div>
-    </div>
+    <Logo/>
+    <NavContainer/>
   </header>
 )
 

@@ -3,8 +3,8 @@ import React from 'react'
 import Exhibition from './Exhibition'
 
 import './about.scss'
-import catImg from './../assets/images/cat1.jpg'
-import cubaImg from './../assets/images/cuba.jpg'
+import catImg from './../assets/images/tmp4.jpg'
+import cubaImg from './../assets/images/tmp3.jpg'
 import tmp1Img from './../assets/images/tmp1.jpg'
 import tmp2Img from './../assets/images/tmp2.jpg'
 

@@ -1,22 +1,24 @@
-@import './../../sass/vars';
+@import './../../vars';
 
 #nav {
   .nav-button {
     position: absolute;
-    top: 0.25rem;
-    right: 1rem;
-    border: 1px solid $gray-50;
-    background-color: transparent;
-    margin:0;
-    padding: 0.5rem 0.5rem 0;
-    height: 3rem;
-    width: 3.85rem;
-    .bar{
-      background-color: $gray-50;
-      display: block;
-      height: 2px;
-      margin-bottom: 4px;
-      border-radius: 2px;
+    top: 0;
+    right: 0;
+    padding:13px;
+    .burger{
+      width: 40px;
+      height:24px;
+      .bar{
+        background-color: $gray-50;
+        display: block;
+        height: 4px;
+        margin-bottom: 6px;
+        border-radius: 4px;
+      }
+      .bar:last-child{
+        margin:0;
+      }
     }
   }
 
@@ -47,7 +49,7 @@
     left: 0;
     height:100%;
     width:75%;
-    background-color: rgba(255,255,255,0.9);
+    background-color: $white;
     list-style: none;
     overflow-x: hidden;
     border-right: none;
@@ -60,22 +62,31 @@
       transform: translateX(-100%);
     }
     li {
-      border-bottom: 0.1rem solid $bluegray-600;
       margin: 0;
       &:last-child {
         border-bottom:none;
       }
       a {
         display: block;
-        padding: 2rem;
+        padding: 1.25rem 0;
         text-decoration: none;
-        color: $bluegray-600;
+        color: $gray-700;
+        font-weight: 500;
         &.active {
-          color: $gray-50;
-          background-color: $bluegray-600;
-          background: linear-gradient(135deg, $bluegray-600 0%,$bluegray-700 100%);
+          color: $cyan-400;
+          background-color: $gray-200;
+        }
+        i.fa {
+          text-align: center;
+          width:5rem;
         }
       }
+    }
+    h2 {
+      padding: 2rem;
+      font-size: 2rem;
+      text-align: center;
+      margin: 0;
     }
   }
 
