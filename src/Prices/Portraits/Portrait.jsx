@@ -7,7 +7,8 @@ const Portrait = () => (
       <div>900 kr</div>
     </li>
 
-    <li>Fotografering 30 min på valfri plats utomhus eller inomhus</li>
+    <li>Fotografering 30 min</li>
+    <li>Utomhus eller inomhus</li>
     <li>5-10 redigerade bilder</li>
   </ul>
 )

@@ -7,7 +7,8 @@ const Family = () => (
       <div>2000 kr</div>
     </li>
 
-    <li>Fotografering 1 timme på valfri plats utomhus eller inomhus</li>
+    <li>Fotografering 1 timme</li>
+    <li>Utomhus eller inomhus</li>
     <li>35-45 redigerade bilder på dropbox</li>
   </ul>
 )

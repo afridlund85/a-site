@@ -5,8 +5,11 @@ import { HalfDay, FullDay } from './'
 const Business = () => (
   <div className="section">
     <div className="container">
-      <h2>Företags-, event-, industri- och reklam-fotografering</h2>
-      <p>1 500 kr/h</p>
+      <h2>
+        Företags-, event-, industri- och reklam-fotografering
+        <em>1 500 kr/h</em>
+      </h2>
+
       <div className="row">
         <div className="column">
           <HalfDay/>

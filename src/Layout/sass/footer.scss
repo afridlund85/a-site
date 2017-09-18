@@ -5,4 +5,15 @@
   // background: linear-gradient(135deg, $gray-900 0%,$gray-800 100%);
   color: $white;
   padding: 5rem 0;
+  text-align: center;
+  .row {
+    flex-direction: row;
+  }
+  .social {
+    margin-bottom: 3rem;
+    i.fa {
+      font-size: 3rem;
+      color: $gray-200;
+    }
+  }
 }

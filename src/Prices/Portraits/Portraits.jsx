@@ -5,6 +5,7 @@ import { Family, Portrait } from './'
 const Portraits = () => (
   <div className="section">
     <div className="container">
+      <h2>Porträtt</h2>
       <div className="row">
         <div className="column">
           <Family/>
