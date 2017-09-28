@@ -5,9 +5,7 @@ import { HalfDay, FullDay } from './'
 const Weddings = () => (
   <div className="section">
     <div className="container">
-      <div className="row">
-        <h2>Bröllop</h2>
-      </div>
+      <h2>Bröllop</h2>
       <div className="row">
         <div className="column">
           <HalfDay/>

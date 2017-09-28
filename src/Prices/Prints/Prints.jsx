@@ -13,6 +13,8 @@ const Prints = () => (
             </li>
             <li>50x70cm</li>
           </ul>
+        </div>
+        <div className="column">
           <ul>
             <li className="price-list-header">
               <h3>Inramade tavlor</h3>
@@ -20,12 +22,14 @@ const Prints = () => (
             </li>
             <li>70x100cm</li>
           </ul>
-          <p>
-            Alla bilder på <a href="https://alwayspreparedforadventure.tumblr.com" target="_blank">
-              alwayspreparedforadventure.tumblr.com
-            </a> är tagna av mig och samtliga går att beställa inramade i ovan nämnda format.
-          </p>
         </div>
+      </div>
+      <div className="row">
+        <p>
+          Alla bilder på <a href="https://alwayspreparedforadventure.tumblr.com" target="_blank">
+            alwayspreparedforadventure.tumblr.com
+          </a> är tagna av mig och samtliga går att beställa inramade i ovan nämnda format.
+        </p>
       </div>
     </div>
   </div>

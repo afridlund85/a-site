@@ -5,23 +5,22 @@
     position: absolute;
     top: 0;
     right: 0;
-    padding:13px;
+    padding:15px;
     .burger{
-      width: 40px;
-      height:24px;
+      width: 36px;
+      // height:24px;
       .bar{
         background-color: $gray-50;
         display: block;
-        height: 4px;
-        margin-bottom: 6px;
-        border-radius: 4px;
+        height: 3px;
+        margin-bottom: 5px;
+        border-radius: 3px;
       }
       .bar:last-child{
         margin:0;
       }
     }
   }
-
 
   #nav-shadow {
     display:block;
@@ -94,6 +93,10 @@
 
 @media (min-width: 40.0rem) {
   #nav {
+    .nav-button{
+      top: 12px;
+      right:6px;
+    }
     #nav-menu {
       width:50%;
     }
@@ -102,6 +105,10 @@
 
 @media (min-width: 80.0rem) {
   #nav {
+    .nav-button{
+      top: 12px;
+      right:6px;
+    }
     #nav-menu {
       width:25%;
     }
