@@ -1,45 +1,67 @@
 import React from 'react'
 
-import './home.scss'
-import tmp1 from '../assets/images/tmp1.jpg'
-import tmp2 from '../assets/images/tmp2.jpg'
-import tmp3 from '../assets/images/tmp3.jpg'
+import Exhibition from './Exhibition'
 
-const Home = () => {
-  return(
-    <div className="home">
-      <div className="section header">
-        <div className="container">
-          <h1><em>Fotograf</em>Alexander Hall</h1>
-        </div>
+import './home.scss'
+import catImg from './../assets/images/tmp4.jpg'
+import cubaImg from './../assets/images/tmp3.jpg'
+import tmp1Img from './../assets/images/tmp1.jpg'
+import tmp2Img from './../assets/images/tmp2.jpg'
+
+const Home = () => (
+  <div className="home">
+    <div className="section header">
+      <div className="container">
+        <h1>
+          <em>Fotograf</em>
+          Alexander Hall
+        </h1>
       </div>
-      <div className="section">
-        <div className="container">
-          <h2>välkomstrubrik</h2>
-          <hr />
-          <p>Lorizzle ipsizzle shizzle my nizzle crocodizzle check out this amet,
-            break yo neck, yall adipiscing yo. Shit sapizzle da bomb, daahng dawg
-            volutpizzle, suscipit fo shizzle, shizzle my nizzle crocodizzle vizzle,
-            brizzle. Pellentesque check it out its fo rizzle. Sed check it out.
-            Crazy the bizzle boom shackalack stuff things tempizzle doggy.
-            Mauris pellentesque nibh hizzle turpizzle. Get down get down izzle
-            tortizzle. The bizzle fo shizzle rhoncus daahng dawg. In hizzle
-            habitasse platea my shizz. Bizzle dapibizzle. Curabitizzle tellus
-            mah nizzle, pretizzle i'm in the shizzle, shizzle my nizzle
-            crocodizzle pimpin', eleifend vitae, dang. Bizzle da bomb.
-            Integizzle sempizzle velit sizzle crazy.
-          </p>
-        </div>
+    </div>
+    <div className="section">
+      <div className="container">
+        <p>Hej och vad kul att du hittat hit!</p>
+        <p>Jag började knäppa bilder som en galning när jag, för 10 år sedan, fick min första digitalkamera i studentpresent. Fotograferandet växte snabbt till en stor passion och kameran hängde, då som nu, konstant på min axel. Mitt fotograferande har, allt sedan denna min första kamera, lett mig till en massa äventyr och tusen oförglömliga möten.</p>
+        <p>Då jag med tiden fått fler och fler fotouppdrag har fotograferandet successivt övergått från hobby till arbete. Jag innehar sedan 1 januari 2015 F-skattsedel och tänker mig snart kunna försörja mig helt och hållet på fotograferandet. Mest av allt tycker jag om att arbeta i naturligt ljus och brinner för att spegla människor och möten på ett spontant och okonstlat vis.</p>
+        <p>Jag är baserad i Växjö men jobbar lite varstans. Kan alltså tänka mig uppdrag i världens alla hörn.</p>
+        <p>Hör gärna av dig!</p>
+        <p><em>- Alexander</em></p>
       </div>
-      <div className="section">
-        <div className="container">
-          <img src={tmp1}/>
-          <img src={tmp2}/>
-          <img src={tmp3}/>
+    </div>
+    <div className="section exhibitions">
+      <div className="container">
+        <h2>Fotoutställningar</h2>
+        <div className="row">
+          <Exhibition
+            title="Kulturnatten i Växjö"
+            subtitle="Hemma Hos Oss, 2015"
+            image={tmp2Img}>
+            Resefotografier från Syd Korea, Filippinerna och Borneo
+          </Exhibition>
+          <Exhibition
+            title="Hasta La Victoria Siempre"
+            subtitle="Hemma Hos Oss, 2014"
+            image={cubaImg}>
+            Resefotografier från Kuba
+          </Exhibition>
+        </div>
+        <div className="row">
+          <Exhibition
+            title="Möten & Ögonblick"
+            subtitle="Hemma Hos Oss, 2013"
+            image={tmp1Img}>
+            Resefotografier från Indien & Bangladesh
+          </Exhibition>
+          <Exhibition
+            title="Portraits of the Far East"
+            subtitle="PM & Vänner, 2011"
+            image={catImg}>
+            Resefotografier från Sydostasien
+          </Exhibition>
         </div>
       </div>
     </div>
-  )
-}
+  </div>
+)
 
 export default Home

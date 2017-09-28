@@ -1,5 +1,4 @@
 import Home from './Home/Home'
-import About from './About/About'
 import Contact from './Contact/Contact'
 import Prices from './Prices/Prices'
 
@@ -23,18 +22,10 @@ const routes = [
   },
   {
     path: '/galleri',
-    component: About,
+    component: Home,
     link: {
       title: 'Galleri',
       icon: 'camera'
-    }
-  },
-  {
-    path: '/om',
-    component: About,
-    link: {
-      title: 'Om mig',
-      icon: 'info'
     }
   },
   {
