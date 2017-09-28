@@ -1,6 +1,7 @@
 import Home from './Home/Home'
 import Contact from './Contact/Contact'
 import Prices from './Prices/Prices'
+import Gallery from './Gallery/Gallery'
 
 const routes = [
   {
@@ -18,11 +19,29 @@ const routes = [
     link: {
       title: 'Priser',
       icon: 'usd'
-    }
+    },
+    sub: [
+      {
+        path: '/priser/a',
+        component: Prices,
+        link: {
+          title: 'Bröllop',
+          icon: 'usd'
+        }
+      },
+      {
+        path: '/priser/b',
+        component: Prices,
+        link: {
+          title: 'Porträtt',
+          icon: 'usd'
+        }
+      },
+    ]
   },
   {
     path: '/galleri',
-    component: Home,
+    component: Gallery,
     link: {
       title: 'Galleri',
       icon: 'camera'

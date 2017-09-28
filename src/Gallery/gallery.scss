@@ -1,0 +1,19 @@
+@import './../vars';
+
+.gallery {
+  .header{
+    background-image: url('./../assets/images/contact-mobile.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+
+@media (min-width: 80.0rem) {
+  .gallery {
+    .header{
+      background-image: url('./../assets/images/contact.jpg');
+    }
+  }
+}
