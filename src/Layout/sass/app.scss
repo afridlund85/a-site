@@ -1,100 +1,61 @@
-@import './../../vars';
+@import './vars';
 
 body {
-  color: $gray-900;
-  background-color: $white;
-  h1,h2,h3,h4,h5,h6 {
-    color: $cyan-800;
-    em {
-      display: block;
-      font-size: 2.25rem;
+
+  #main {
+    padding: 0;
+    margin-top: 50px;
+    overflow:hidden;
+    min-height:100vh;
+    .section {
+
+      a {
+      }
+
+      h1,h2,h3,h4,h5,h6 {
+        color: $black;
+      }
+      h2 {
+        text-align: center;
+      }
+      &.header{
+
+      }
+
     }
-  }
-  a {
-    color: $orange-700;
+
   }
 }
 
-.main {
-  padding: 0;
-  margin-top: 50px;
-  overflow:hidden;
-  min-height:100vh;
-  .section {
-    padding: 3rem 0;
-    background-color: $cyan-800;
-    color: $white;
-    a {
-      color: $orange-300;
-    }
-    &:nth-child(even) {
-      background-color: $white;
-      color: $black;
-      h1,h2,h3,h4,h5,h6 {
-        color: $cyan-800;
-      }
-      a {
-        color: $orange-700;
-      }
-    }
-    h1,h2,h3,h4,h5,h6 {
-      color: $white;
-    }
-    h2 {
-      text-align: center;
-    }
-    &.header{
-      h1{
-        color: $gray-50;
-        text-shadow: 1px 1px 5px $gray-700;
-        font-size: 5.55rem;
-        font-family: 'Ubuntu', cursive;
-        line-height: 1;
-        font-weight: 500;
-        margin:0;
-      }
-      em {
-        color: $gray-50;
-        text-shadow: 1px 1px 5px $gray-700;
-        display: block;
-        text-align: center;
-        font-size: 2.25rem;
-      }
-      padding: 10rem 0;
-      background-color: $gray-50;
-      text-align: center;
-    }
+/*PAGE FADE IN & OUT*/
+.fade-appear,
+.fade-enter {
+  opacity: 0;
+  transform: translateX(-100%);
+}
 
-  }
-  .fade-appear,
-  .fade-enter {
-    opacity: 0;
-    transform: translateX(-100%);
-  }
+.fade-appear-active,
+.fade-enter-active {
+  transition: opacity .3s linear,
+    transform .3s linear;
+  opacity: 1;
+  transform: translateX(0);
+}
 
-  .fade-appear-active,
-  .fade-enter-active {
-    transition: opacity .3s linear,
-      transform .3s linear;
-    opacity: 1;
-    transform: translateX(0);
-  }
+.fade-exit {
+  transition: opacity .2s linear,
+    transform .2s linear;
+  opacity: 1;
+  transform: translateX(0);
+}
 
-  .fade-exit {
-    transition: opacity .2s linear,
-      transform .2s linear;
-    opacity: 1;
-    transform: translateX(0);
-  }
-
-  .fade-exit-active {
-    opacity: 0;
-    transform: translateX(100%);
-  }
+.fade-exit-active {
+  opacity: 0;
+  transform: translateX(100%);
 }
 
 @media (min-width: 40.0rem) {
-  .main {
+  #main {
     margin-top: 75px;
     .section {
       padding: 9rem 0;
@@ -106,7 +67,7 @@ body {
 }
 
 @media (min-width: 80.0rem) {
-  .main {
+  #main {
     margin-top: 75px;
   }
 }

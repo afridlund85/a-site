@@ -11,7 +11,10 @@ const NavMenu = ({isActive, handleClick}) => (
     onClick={handleClick}
   >
     <div>
-      <h2>Alexander Hall<br/>Photography</h2>
+      <h2>
+        Alexander Hall<br/>
+        Photography
+      </h2>
     </div>
     {routes
       .filter(route => !!route.link)

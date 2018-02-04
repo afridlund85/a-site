@@ -1,7 +1,9 @@
-import Home from './Home/Home'
-import Contact from './Contact/Contact'
-import Prices from './Prices/Prices'
-import Gallery from './Gallery/Gallery'
+import Home from './Pages/Home/Home'
+import Weddings from './Pages/Weddings/Weddings'
+import Business from './Pages/Business/Business'
+import Contact from './Pages/Contact/Contact'
+import Prices from './Pages/Prices'
+import Gallery from './Pages/Gallery/Gallery'
 
 const routes = [
   {
@@ -14,7 +16,26 @@ const routes = [
     }
   },
   {
+    path: '/brollop',
+    exact: true,
+    component: Weddings,
+    link: {
+      title: 'Bröllop',
+      icon: 'home'
+    }
+  },
+  {
+    path: '/foretag_och_event',
+    exact: true,
+    component: Business,
+    link: {
+      title: 'Företag & Event',
+      icon: 'home'
+    }
+  },
+  {
     path: '/priser',
+    exact: true,
     component: Prices,
     link: {
       title: 'Priser',
@@ -22,16 +43,16 @@ const routes = [
     },
     sub: [
       {
-        path: '/priser/a',
-        component: Prices,
+        path: '/priser/foretag',
+        component: Business,
         link: {
-          title: 'Bröllop',
+          title: 'Företag & Event',
           icon: 'usd'
         }
       },
       {
         path: '/priser/b',
-        component: Prices,
+        component: Home,
         link: {
           title: 'Porträtt',
           icon: 'usd'

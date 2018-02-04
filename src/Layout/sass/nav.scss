@@ -1,4 +1,4 @@
-@import './../../vars';
+@import './vars';
 
 #nav {
   .nav-button {
@@ -10,7 +10,7 @@
       width: 36px;
       // height:24px;
       .bar{
-        background-color: $gray-50;
+        background-color: $gray-500;
         display: block;
         height: 3px;
         margin-bottom: 5px;
@@ -42,7 +42,7 @@
     }
   }
 
-  #nav-menu {
+  ul#nav-menu {
     position: fixed;
     top: 0;
     left: 0;
@@ -62,18 +62,11 @@
     }
     li {
       margin: 0;
-      &:last-child {
-        border-bottom:none;
-      }
-      a {
+      a, .nav-toggle {
+        color: $black;
         display: block;
         padding: 1.25rem 0;
-        text-decoration: none;
-        color: $gray-700;
-        font-weight: 500;
         &.active {
-          color: $cyan-800;
-          background-color: $gray-200;
         }
         i.fa {
           text-align: center;
@@ -82,8 +75,7 @@
       }
       ul {
         list-style: none;
-        margin:0 0 0 2rem;
-        font-size: 100%;
+        margin: 0;
       }
     }
     h2 {

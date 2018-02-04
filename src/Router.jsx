@@ -11,7 +11,7 @@ const Router = () => (
     <Route render={({location}) => (
       <ScrollToTop>
         <App>
-          <TransitionGroup className="main">
+          <TransitionGroup id="main">
             <CSSTransition
               key={location.pathname}
               timeout={{enter: 300, exit: 200}}
@@ -20,7 +20,7 @@ const Router = () => (
             >
               <Switch location={location}>
                 {routes.map(({path, exact, component: Component}) => (
-                    <Route key={path} path={path} exact={exact} component={Component} />
+                  <Route key={path} path={path} exact={exact} component={Component} />
                 ))}
               </Switch>
             </CSSTransition>
