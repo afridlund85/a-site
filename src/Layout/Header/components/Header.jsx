@@ -1,9 +1,9 @@
 import React from 'react'
 
 import Logo from './Logo'
-import NavContainer from '../containers/NavContainer'
+import NavContainer from './../../Nav'
 
-import '../sass/header.scss'
+import '../header.scss'
 
 const Header = () => (
   <header id="header">

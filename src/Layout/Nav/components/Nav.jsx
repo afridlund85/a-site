@@ -4,21 +4,21 @@ import PropTypes from 'prop-types'
 import NavMenu from './NavMenu'
 import NavButton from './NavButton'
 
-const Nav = ({isActive, handleClick}) => (
+const Nav = ({isActive, handleToggle}) => (
   <div id="nav" className="column">
     <div
       id="nav-shadow"
       className={isActive ? 'show' : ''}
-      onClick={handleClick}
+      onClick={handleToggle}
     ></div>
-    <NavMenu isActive={isActive} handleClick={handleClick}/>
-    <NavButton handleClick={handleClick}/>
+    <NavMenu isActive={isActive} handleToggle={handleToggle}/>
+    <NavButton handleToggle={handleToggle}/>
   </div>
 )
 
 Nav.propTypes = {
   isActive: PropTypes.bool.isRequired,
-  handleClick: PropTypes.func.isRequired
+  handleToggle: PropTypes.func.isRequired
 }
 
 export default Nav

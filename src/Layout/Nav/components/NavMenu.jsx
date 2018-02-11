@@ -1,14 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import routes from './../../routes'
+import routes from './../../../routes.config'
 import NavLi from './NavLi'
-import './../SASS/nav.scss'
+import NavLiWithSub from './NavLiWithSub'
 
-const NavMenu = ({isActive, handleClick}) => (
+const NavMenu = ({isActive, handleToggle}) => (
   <ul
     id="nav-menu"
     className={isActive ? 'slideIn' : 'slideOut'}
-    onClick={handleClick}
   >
     <div>
       <h2>
@@ -18,14 +17,18 @@ const NavMenu = ({isActive, handleClick}) => (
     </div>
     {routes
       .filter(route => !!route.link)
-      .map((route) => <NavLi key={route.path} {...route} />)
+      .map((route) => {
+        return !route.sub
+          ? <NavLi key={route.path} handleToggle={handleToggle} {...route} />
+          : <NavLiWithSub key={route.path} handleToggle={handleToggle} {...route} />
+      })
     }
   </ul>
 )
 
 NavMenu.propTypes = {
   isActive: PropTypes.bool.isRequired,
-  handleClick: PropTypes.func.isRequired
+  handleToggle: PropTypes.func.isRequired
 }
 
 export default NavMenu

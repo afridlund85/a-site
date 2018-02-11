@@ -2,7 +2,7 @@ import React from 'react'
 
 const Portraits = () => (
   <div className="section">
-    Porträtt
+    Priser Porträtt
   </div>
 )
 

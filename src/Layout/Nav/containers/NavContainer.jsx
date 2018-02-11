@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 import Nav from '../components/Nav'
+import './../nav.scss'
 
 class NavContainer extends Component {
   constructor(props) {
@@ -16,7 +17,7 @@ class NavContainer extends Component {
     })
   }
   render(){
-    return <Nav isActive={this.state.show} handleClick={this.handleToggle}/>
+    return <Nav isActive={this.state.show} handleToggle={this.handleToggle}/>
   }
 }
 

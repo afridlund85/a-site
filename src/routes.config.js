@@ -2,7 +2,10 @@ import Home from './Pages/Home/Home'
 import Weddings from './Pages/Weddings/Weddings'
 import Business from './Pages/Business/Business'
 import Contact from './Pages/Contact/Contact'
-import Prices from './Pages/Prices'
+import Prices_Business from './Pages/Prices/Business'
+import Prices_Wedding from './Pages/Prices/Weddings'
+import Prices_Prints from './Pages/Prices/Prints'
+import Prices_Portraits from './Pages/Prices/Portraits'
 import Gallery from './Pages/Gallery/Gallery'
 
 const routes = [
@@ -21,7 +24,7 @@ const routes = [
     component: Weddings,
     link: {
       title: 'Bröllop',
-      icon: 'home'
+      icon: 'gem'
     }
   },
   {
@@ -30,13 +33,13 @@ const routes = [
     component: Business,
     link: {
       title: 'Företag & Event',
-      icon: 'home'
+      icon: 'building'
     }
   },
   {
     path: '/priser',
     exact: true,
-    component: Prices,
+    component: Prices_Business,
     link: {
       title: 'Priser',
       icon: 'usd'
@@ -44,18 +47,30 @@ const routes = [
     sub: [
       {
         path: '/priser/foretag',
-        component: Business,
+        component: Prices_Business,
         link: {
-          title: 'Företag & Event',
-          icon: 'usd'
+          title: 'Företag & Event'
         }
       },
       {
-        path: '/priser/b',
-        component: Home,
+        path: '/priser/brollop',
+        component: Prices_Wedding,
         link: {
-          title: 'Porträtt',
-          icon: 'usd'
+          title: 'Brollop'
+        }
+      },
+      {
+        path: '/priser/prints_och_tavlor',
+        component: Prices_Prints,
+        link: {
+          title: 'Prints och tavlor'
+        }
+      },
+      {
+        path: '/priser/portratt',
+        component: Prices_Portraits,
+        link: {
+          title: 'Porträtt'
         }
       },
     ]

@@ -10,7 +10,7 @@ const prodConfig = {
   output: {
     filename: 'app-[hash].js',
     path: rootPath('dist'),
-    publicPath: ''
+    publicPath: '/'
   },
   plugins: [
     new HtmlWebpackPlugin({

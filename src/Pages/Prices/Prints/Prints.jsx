@@ -2,7 +2,7 @@ import React from 'react'
 
 const Prints = () => (
   <div className="section">
-    Tavlor & Prints
+    Priser Tavlor & Prints
   </div>
 )
 
