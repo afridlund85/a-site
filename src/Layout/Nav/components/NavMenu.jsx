@@ -5,25 +5,27 @@ import NavLi from './NavLi'
 import NavLiWithSub from './NavLiWithSub'
 
 const NavMenu = ({isActive, handleToggle}) => (
-  <ul
+  <div
     id="nav-menu"
     className={isActive ? 'slideIn' : 'slideOut'}
   >
-    <div>
+    <div className="menu-header">
       <h2>
         Alexander Hall<br/>
         Photography
       </h2>
     </div>
-    {routes
-      .filter(route => !!route.link)
-      .map((route) => {
-        return !route.sub
-          ? <NavLi key={route.path} handleToggle={handleToggle} {...route} />
-          : <NavLiWithSub key={route.path} handleToggle={handleToggle} {...route} />
-      })
-    }
-  </ul>
+    <ul>
+      {routes
+        .filter(route => !!route.link)
+        .map((route) => {
+          return !route.sub
+            ? <NavLi key={route.path} handleToggle={handleToggle} {...route} />
+            : <NavLiWithSub key={route.path} handleToggle={handleToggle} {...route} />
+        })
+      }
+    </ul>
+  </div>
 )
 
 NavMenu.propTypes = {

@@ -4,10 +4,11 @@ import NavLi from './NavLi'
 
 const NavLiWithSub = ({link, sub, handleToggle}) => (
   <li>
-    <span>
-      {link.icon && <i className={'fa fa-' + link.icon} aria-hidden="true"></i>}
+    <a href="">
+      {link.icon && <span className={'fa-fw ' + link.icon} aria-hidden="true"></span>}
       {link.title}
-    </span>
+      <span className={'fa-fw fas fa-angle-down'} aria-hidden="true"></span>
+    </a>
     <ul>
       {sub
         .filter(route => !!route.link)

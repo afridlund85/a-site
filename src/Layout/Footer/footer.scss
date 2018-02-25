@@ -1,16 +1,25 @@
 @import './../vars';
 
 #footer {
+  position: absolute;
+  bottom: 0;
+  width:100%;
   background: $gray-900;
-  // background: linear-gradient(135deg, $gray-900 0%,$gray-800 100%);
+  background: -moz-linear-gradient(-25deg, rgba(59,89,152,1) 33.3%, rgba(209,8,105,1) 33.44%, rgba(209,8,105,1) 66.6%, rgba(54,70,93,1) 66.7%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-25deg, rgba(59,89,152,1) 33.3%, rgba(209,8,105,1) 33.4%, rgba(209,8,105,1) 66.6%, rgba(54,70,93,1) 66.7%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(115deg, rgba(59,89,152,1) 33.3%, rgba(209,8,105,1) 33.4%, rgba(209,8,105,1) 66.6%, rgba(54,70,93,1) 66.7%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b5998', endColorstr='#36465d',GradientType=0 ); /* IE6-9 fallback on horizontal gradient */
   color: $white;
-  padding: 5rem 0;
+  padding: 2rem 0;
   text-align: center;
+  .container{
+    padding: 0;
+  }
   .row {
     flex-direction: row;
   }
   .social {
-    margin-bottom: 3rem;
+    margin: 0;
     i.fa {
       font-size: 3rem;
       color: $gray-200;

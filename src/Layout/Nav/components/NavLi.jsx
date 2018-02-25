@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom'
 const NavLi = ({path, exact, link, handleToggle}) => (
   <li onClick={handleToggle}>
     <NavLink to={path} exact={exact}>
-      {link.icon && <i className={'fa fa-' + link.icon} aria-hidden="true"></i>}
+      {link.icon && <span className={'fa-fw ' + link.icon} aria-hidden="true"></span>}
       {link.title}
     </NavLink>
   </li>

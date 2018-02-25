@@ -1,29 +1,21 @@
 @import './vars';
-
+html, body{
+  min-height: 100%;
+}
 body {
 
-  #main {
+  a {
+    color: $black;
+  }
+
+  h1,h2,h3,h4,h5,h6 {
+    color: $black;
+  }
+
+  main {
     padding: 0;
     margin-top: 50px;
     overflow:hidden;
-    min-height:100vh;
-    .section {
-
-      a {
-      }
-
-      h1,h2,h3,h4,h5,h6 {
-        color: $black;
-      }
-      h2 {
-        text-align: center;
-      }
-      &.header{
-
-      }
-
-    }
-
   }
 }
 

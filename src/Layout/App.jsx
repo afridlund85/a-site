@@ -9,7 +9,9 @@ import './app.scss'
 const App = ({children}) => (
   <div>
     <Header/>
-    {children}
+    <main>
+      {children}
+    </main>
     <Footer/>
   </div>
 )

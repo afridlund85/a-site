@@ -22,11 +22,6 @@ const Footer = () => (
           </a>
         </div>
       </div>
-      <div className="row">
-        <div className="column">
-          © alexanderhallphotography.com
-        </div>
-      </div>
     </div>
   </div>
 )

@@ -15,7 +15,7 @@ const routes = [
     component: Home,
     link: {
       title: 'Start',
-      icon: 'home'
+      icon: 'fas fa-home'
     }
   },
   {
@@ -24,7 +24,7 @@ const routes = [
     component: Weddings,
     link: {
       title: 'Bröllop',
-      icon: 'gem'
+      icon: 'far fa-gem'
     }
   },
   {
@@ -33,8 +33,39 @@ const routes = [
     component: Business,
     link: {
       title: 'Företag & Event',
-      icon: 'building'
+      icon: 'far fa-address-card'
     }
+  },
+  {
+    path: '/galleri',
+    component: Gallery,
+    link: {
+      title: 'Galleri',
+      icon: 'fas fa-camera'
+    },
+    sub: [
+      {
+        path: '/galleri/brollop',
+        component: Prices_Wedding,
+        link: {
+          title: 'Brollop'
+        }
+      },
+      {
+        path: '/galleri/foretag',
+        component: Prices_Business,
+        link: {
+          title: 'Företag & Event'
+        }
+      },
+      {
+        path: '/galleri/prints_och_tavlor',
+        component: Prices_Prints,
+        link: {
+          title: 'Prints och tavlor'
+        }
+      }
+    ]
   },
   {
     path: '/priser',
@@ -42,21 +73,21 @@ const routes = [
     component: Prices_Business,
     link: {
       title: 'Priser',
-      icon: 'usd'
+      icon: 'fas fa-dollar-sign'
     },
     sub: [
-      {
-        path: '/priser/foretag',
-        component: Prices_Business,
-        link: {
-          title: 'Företag & Event'
-        }
-      },
       {
         path: '/priser/brollop',
         component: Prices_Wedding,
         link: {
           title: 'Brollop'
+        }
+      },
+      {
+        path: '/priser/foretag',
+        component: Prices_Business,
+        link: {
+          title: 'Företag & Event'
         }
       },
       {
@@ -72,23 +103,15 @@ const routes = [
         link: {
           title: 'Porträtt'
         }
-      },
+      }
     ]
-  },
-  {
-    path: '/galleri',
-    component: Gallery,
-    link: {
-      title: 'Galleri',
-      icon: 'camera'
-    }
   },
   {
     path: '/kontakt',
     component: Contact,
     link: {
       title: 'Kontakt',
-      icon: 'envelope-o'
+      icon: 'far fa-envelope'
     }
   }
 ]
