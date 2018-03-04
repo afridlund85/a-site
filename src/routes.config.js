@@ -46,7 +46,6 @@ const routes = [
   {
     path: '/galleri',
     component: Gallery,
-    exact: true,
     link: {
       title: 'Galleri',
       icon: 'fas fa-camera',
@@ -78,7 +77,6 @@ const routes = [
   },
   {
     path: '/priser',
-    exact: true,
     component: Prices,
     link: {
       title: 'Priser',

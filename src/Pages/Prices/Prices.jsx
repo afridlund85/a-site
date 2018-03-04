@@ -1,11 +1,23 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+import { Route } from 'react-router-dom'
 
 import './prices.scss'
 
-const Prices = () => (
-  <div className="prices">
-    Nopes
+const Prices = ({sub}) =>  (
+  <div>
+    {sub.map(route => (
+        <Route
+          key={route.path}
+          path={route.path}
+          render={props => <route.component {...props} />}
+        />
+    ))}
   </div>
 )
+
+Prices.propTypes = {
+  sub: PropTypes.array.isRequired
+}
 
 export default Prices
