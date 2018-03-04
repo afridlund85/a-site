@@ -2,11 +2,15 @@ import Home from './Pages/Home/Home'
 import Weddings from './Pages/Weddings/Weddings'
 import Business from './Pages/Business/Business'
 import Contact from './Pages/Contact/Contact'
+import Prices from './Pages/Prices'
 import Prices_Business from './Pages/Prices/Business'
 import Prices_Wedding from './Pages/Prices/Weddings'
 import Prices_Prints from './Pages/Prices/Prints'
 import Prices_Portraits from './Pages/Prices/Portraits'
-import Gallery from './Pages/Gallery/Gallery'
+import Gallery from './Pages/Gallery'
+import Gallery_Business from './Pages/Gallery/Business'
+import Gallery_Wedding from './Pages/Gallery/Weddings'
+import Gallery_Prints from './Pages/Gallery/Prints'
 
 const routes = [
   {
@@ -42,6 +46,7 @@ const routes = [
   {
     path: '/galleri',
     component: Gallery,
+    exact: true,
     link: {
       title: 'Galleri',
       icon: 'fas fa-camera',
@@ -50,21 +55,21 @@ const routes = [
     sub: [
       {
         path: '/galleri/brollop',
-        component: Prices_Wedding,
+        component: Gallery_Wedding,
         link: {
           title: 'Brollop'
         }
       },
       {
         path: '/galleri/foretag',
-        component: Prices_Business,
+        component: Gallery_Business,
         link: {
           title: 'Företag & Event'
         }
       },
       {
         path: '/galleri/prints_och_tavlor',
-        component: Prices_Prints,
+        component: Gallery_Prints,
         link: {
           title: 'Prints och tavlor'
         }
@@ -74,7 +79,7 @@ const routes = [
   {
     path: '/priser',
     exact: true,
-    component: Prices_Business,
+    component: Prices,
     link: {
       title: 'Priser',
       icon: 'fas fa-dollar-sign',
@@ -83,6 +88,7 @@ const routes = [
     sub: [
       {
         path: '/priser/brollop',
+        exact: true,
         component: Prices_Wedding,
         link: {
           title: 'Brollop'

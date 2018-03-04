@@ -4,7 +4,7 @@ import './gallery.scss'
 
 const Gallery = () => (
   <div className="gallery">
-    Portfolio
+    Nopes
   </div>
 )
 
