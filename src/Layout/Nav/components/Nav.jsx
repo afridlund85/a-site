@@ -1,24 +1,24 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import NavMenu from './NavMenu'
-import NavButton from './NavButton'
+import Menu from './Menu'
+import MenuButton from './MenuButton'
 
-const Nav = ({isActive, handleToggle}) => (
+const Nav = ({isActive, toggleMenu}) => (
   <div id="nav" className="column">
     <div
       id="nav-shadow"
       className={isActive ? 'show' : ''}
-      onClick={handleToggle}
+      onClick={toggleMenu}
     ></div>
-    <NavMenu isActive={isActive} handleToggle={handleToggle}/>
-    <NavButton handleToggle={handleToggle}/>
+    <Menu isActive={isActive} toggleMenu={toggleMenu}/>
+    <MenuButton toggleMenu={toggleMenu}/>
   </div>
 )
 
 Nav.propTypes = {
   isActive: PropTypes.bool.isRequired,
-  handleToggle: PropTypes.func.isRequired
+  toggleMenu: PropTypes.func.isRequired
 }
 
 export default Nav

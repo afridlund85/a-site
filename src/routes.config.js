@@ -15,7 +15,8 @@ const routes = [
     component: Home,
     link: {
       title: 'Start',
-      icon: 'fas fa-home'
+      icon: 'fas fa-home',
+      color: '#3949AB'
     }
   },
   {
@@ -24,7 +25,8 @@ const routes = [
     component: Weddings,
     link: {
       title: 'Bröllop',
-      icon: 'far fa-gem'
+      icon: 'far fa-gem',
+      color: '#D81B60'
     }
   },
   {
@@ -33,7 +35,8 @@ const routes = [
     component: Business,
     link: {
       title: 'Företag & Event',
-      icon: 'far fa-address-card'
+      icon: 'far fa-address-card',
+      color: '#546E7A'
     }
   },
   {
@@ -41,7 +44,8 @@ const routes = [
     component: Gallery,
     link: {
       title: 'Galleri',
-      icon: 'fas fa-camera'
+      icon: 'fas fa-camera',
+      color: '#FB8C00'
     },
     sub: [
       {
@@ -73,7 +77,8 @@ const routes = [
     component: Prices_Business,
     link: {
       title: 'Priser',
-      icon: 'fas fa-dollar-sign'
+      icon: 'fas fa-dollar-sign',
+      color: '#7CB342'
     },
     sub: [
       {
@@ -111,7 +116,8 @@ const routes = [
     component: Contact,
     link: {
       title: 'Kontakt',
-      icon: 'far fa-envelope'
+      icon: 'far fa-envelope',
+      color: '#6D4C41'
     }
   }
 ]

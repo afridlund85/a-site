@@ -9,15 +9,15 @@ class NavContainer extends Component {
     this.state = {
       show: false
     }
-    this.handleToggle = this.handleToggle.bind(this)
+    this.toggleMenu = this.toggleMenu.bind(this)
   }
-  handleToggle() {
+  toggleMenu() {
     this.setState({
       show: !this.state.show
     })
   }
   render(){
-    return <Nav isActive={this.state.show} handleToggle={this.handleToggle}/>
+    return <Nav isActive={this.state.show} toggleMenu={this.toggleMenu}/>
   }
 }
 

@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const NavButton = ({handleToggle}) => (
-  <div className="nav-button" onClick={handleToggle}>
+const MenuButton = ({toggleMenu}) => (
+  <div className="nav-button" onClick={toggleMenu}>
     <div className="burger">
       <span className="bar"></span>
       <span className="bar"></span>
@@ -11,8 +11,8 @@ const NavButton = ({handleToggle}) => (
   </div>
 )
 
-NavButton.propTypes = {
-  handleToggle: PropTypes.func.isRequired
+MenuButton.propTypes = {
+  toggleMenu: PropTypes.func.isRequired
 }
 
-export default NavButton
+export default MenuButton
