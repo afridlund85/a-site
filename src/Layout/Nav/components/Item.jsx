@@ -11,7 +11,7 @@ const Item = ({path, exact, link, toggleMenu}) => (
   >
     <NavLink to={path} exact={exact}>
       {link.icon && <Icon icon={link.icon} />}
-      {link.title}
+      <span>{link.title}</span>
     </NavLink>
   </li>
 )

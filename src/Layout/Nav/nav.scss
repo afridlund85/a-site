@@ -83,10 +83,6 @@
           display: block;
           padding: 1.25rem 0;
           background-color: #fff;
-          span {
-            text-align: center;
-            width:4rem;
-          }
           &:hover {
             background-color: rgba(255, 255, 255, 0.75);
           }
@@ -95,6 +91,14 @@
             &:hover {
               background-color: rgba(255, 255, 255, 0.75);
             }
+          }
+          i {
+            text-align: center;
+            vertical-align: middle;
+            width:4rem;
+          }
+          span {
+            vertical-align: middle;
           }
         }
         ul {
@@ -106,7 +110,7 @@
             border-top: 0;
             padding: 0;
             a {
-              padding-left: 5.5rem;
+              padding-left: 3.5rem;
             }
           }
         }
@@ -127,7 +131,6 @@
       ul {
         li {
           margin: 0;
-          padding-top: 1px;
         }
       }
     }
