@@ -15,8 +15,8 @@ const prodConfig = {
   plugins: [
     new HtmlWebpackPlugin({
       template: rootPath('src/index.html'),
-      inject: 'body',
-      favicon: rootPath('src/assets/images/nodejs.png')
+      inject: 'body'
+      // favicon: rootPath('src/assets/images/nodejs.png')
     }),
     new ExtractTextPlugin('css/styles.css')
   ]
