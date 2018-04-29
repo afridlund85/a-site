@@ -7,6 +7,9 @@ const { rootPath } = require('./helpers')
 
 const prodConfig = {
   devtool: 'inline-source-map',
+  entry: [
+    './src/index.jsx'
+  ],
   output: {
     filename: 'app-[hash].js',
     path: rootPath('dist'),
