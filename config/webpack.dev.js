@@ -10,7 +10,7 @@ const devConfig = {
   output: {
     filename: 'app.js',
     path: rootPath('public'),
-    publicPath: '/'
+    publicPath: '/a-site/dist'
   },
   watchOptions: {
     aggregateTimeout: 300,
