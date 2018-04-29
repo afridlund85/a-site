@@ -1,12 +1,13 @@
 .business {
-  .header{
+  .page-header {
+    background-image: url('../../assets/images/contact-mobile.jpg');
   }
 }
 
-
 @media (min-width: 80.0rem) {
   .business {
-    .header{
+    .page-header {
+      background-image: url('../../assets/images/contact.jpg');
     }
   }
 }

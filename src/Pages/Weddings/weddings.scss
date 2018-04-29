@@ -1,12 +1,13 @@
 .weddings {
-  .header{
+  .page-header {
+    background-image: url('../../assets/images/prices-mobile.jpg');
   }
 }
 
-
 @media (min-width: 80.0rem) {
   .weddings {
-    .header{
+    .page-header {
+      background-image: url('../../assets/images/prices.jpg');
     }
   }
 }

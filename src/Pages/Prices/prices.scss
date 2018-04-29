@@ -1,11 +1,33 @@
 .prices {
-  .header{
+  >div{
+    display: flex;
+    flex-direction: column;
+  }
+  .prices-business{
+    .page-header{
+      background-color: #00f;
+    }
+  }
+  .prices-weddings{
+    .page-header{
+      background-color: #f00;
+    }
+  }
+  .prices-prints{
+    .page-header{
+      background-color: #0f0;
+    }
+  }
+  .prices-portraits{
+    .page-header{
+      background-color: #0ff;
+    }
   }
 }
 
 @media (min-width: 80.0rem) {
   .prices {
-    .header{
+    .page-header{
     }
   }
 }

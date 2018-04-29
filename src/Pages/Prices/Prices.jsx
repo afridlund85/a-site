@@ -5,7 +5,7 @@ import { Route } from 'react-router-dom'
 import './prices.scss'
 
 const Prices = ({sub}) =>  (
-  <div>
+  <div className="prices">
     {sub.map(route => (
         <Route
           key={route.path}

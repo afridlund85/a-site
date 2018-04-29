@@ -1,11 +1,13 @@
 .home {
-  .header{
+  .page-header {
+    background-image: url('../../assets/images/home-mobile.jpg');
   }
 }
 
 @media (min-width: 80.0rem) {
   .home {
-    .header{
+    .page-header {
+      background-image: url('../../assets/images/home.jpg');
     }
   }
 }

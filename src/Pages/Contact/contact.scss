@@ -1,12 +1,13 @@
 .contact {
-  .header{
+  .page-header {
+    background-image: url('../../assets/images/about-mobile.jpg');
   }
 }
 
-
 @media (min-width: 80.0rem) {
   .contact {
-    .header{
+    .page-header {
+      background-image: url('../../assets/images/about.jpg');
     }
   }
 }

@@ -3,20 +3,57 @@ html, body{
   margin:0;
   padding:0;
 }
-body {
 
-  a {
-    color: $black;
+a {
+  color: $black;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color: $black;
+}
+
+main {
+  padding: 0;
+  margin: 50px 0;
+  overflow:hidden;
+  >div{
+    display: flex;
+    flex-direction: column;
   }
-
-  h1,h2,h3,h4,h5,h6 {
-    color: $black;
-  }
-
-  main {
-    padding: 0;
-    margin-top: 50px;
-    overflow:hidden;
+  section {
+    min-height: 20rem;
+    padding: 5rem 1rem;
+    box-shadow: 0 4px 2px -2px gray;
+    background-color: #f6f6f6;
+    h1, h2{
+      text-align: center;
+    }
+    &:nth-child(even) {
+      background-color: #fff;
+    }
+    &.page-header{
+      padding:1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 30rem;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      h1,h2 {
+        font-family: 'PT Serif';
+        text-align:center;
+        margin: 0;
+        line-height:1;
+      }
+      h1 {
+        font-size: 4.75rem;
+      }
+      h2 {
+        font-family: 'Ubuntu';
+        font-size: 2.75rem;
+      }
+    }
   }
 }
 
@@ -25,19 +62,25 @@ body {
 }
 
 @media (min-width: 40.0rem) {
-  #main {
-    margin-top: 75px;
-    .section {
-      padding: 9rem 0;
-      &.header{
-        padding: 12rem 0;
+  main {
+    margin: 75px 0;
+    section {
+      min-height: 30rem;
+      &.page-header{
+        min-height: 40rem;
       }
     }
   }
 }
 
 @media (min-width: 80.0rem) {
-  #main {
-    margin-top: 75px;
+  main {
+    margin: 75px 0;
+    section {
+      min-height: 40rem;
+      &.page-header{
+        min-height: 50rem;
+      }
+    }
   }
 }
