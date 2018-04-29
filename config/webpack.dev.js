@@ -10,7 +10,15 @@ const devConfig = {
   output: {
     filename: 'app.js',
     path: rootPath('public'),
-    publicPath: '/a-site/dist'
+    publicPath: '/'
+  },
+  module: {
+    rules: [
+      {
+        test: /\.(jpe?g|png|svg)$/,
+        use: 'url-loader?limit=10000&name=[name]-[hash].[ext]&publicPath=/&outputPath=assets/images/'
+      }
+    ]
   },
   watchOptions: {
     aggregateTimeout: 300,

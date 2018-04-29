@@ -10,7 +10,15 @@ const prodConfig = {
   output: {
     filename: 'app-[hash].js',
     path: rootPath('dist'),
-    publicPath: '/'
+    publicPath: '/a-site/dist'
+  },
+  module: {
+    rules: [
+      {
+        test: /\.(jpe?g|png|svg)$/,
+        use: 'url-loader?limit=10000&name=[name]-[hash].[ext]&publicPath=/a-site/dist&outputPath=assets/images/'
+      }
+    ]
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -18,7 +26,7 @@ const prodConfig = {
       inject: 'body'
       // favicon: rootPath('src/assets/images/nodejs.png')
     }),
-    new ExtractTextPlugin('css/styles.css')
+    new ExtractTextPlugin('css/styles-[hash].css')
   ]
 }
 
