@@ -19,7 +19,7 @@ const prodConfig = {
     rules: [
       {
         test: /\.(jpe?g|png|svg)$/,
-        use: 'url-loader?limit=10000&name=[name]-[hash].[ext]&publicPath=/a-site/dist&outputPath=assets/images/'
+        use: 'url-loader?limit=10000&name=[name]-[hash].[ext]&publicPath=/a-site/dist/&outputPath=assets/images/'
       }
     ]
   },
