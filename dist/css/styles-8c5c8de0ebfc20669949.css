@@ -807,16 +807,16 @@ img {
   flex-direction: column; }
 
 .prices .prices-business .page-header {
-  background-color: #00f; }
+  background-color: #546E7A; }
 
 .prices .prices-weddings .page-header {
-  background-color: #f00; }
+  background-color: #D81B60; }
 
 .prices .prices-prints .page-header {
-  background-color: #0f0; }
+  background-color: #3949AB; }
 
 .prices .prices-portraits .page-header {
-  background-color: #0ff; }
+  background-color: #FB8C00; }
 #nav .nav-button {
   position: absolute;
   top: 0;
@@ -946,6 +946,8 @@ img {
     #header #logo h1 {
       font-size: 2.5rem;
       margin: 0; }
+    #header #logo a {
+      color: #000; }
   #header.hide {
     transform: translateY(-100%); }
 
@@ -993,16 +995,20 @@ html, body {
   margin: 0;
   padding: 0; }
 
-a {
-  color: #000; }
-
 h1, h2, h3, h4, h5, h6 {
   color: #000; }
+
+ul {
+  text-align: left; }
 
 main {
   padding: 0;
   margin: 50px 0;
   overflow: hidden; }
+  main a {
+    color: #00695c;
+    text-decoration: underline;
+    font-style: italic; }
   main > div {
     display: flex;
     flex-direction: column; }
@@ -1011,8 +1017,16 @@ main {
     padding: 5rem 1rem;
     box-shadow: 0 4px 2px -2px gray;
     background-color: #f6f6f6; }
-    main section h1, main section h2 {
+    main section h1, main section h2, main section h3, main section h4, main section h5, main section h6 {
       text-align: center; }
+    main section .box {
+      padding: 1rem;
+      margin: 5rem 0 0 0;
+      border-radius: 2px;
+      background-color: #eee;
+      text-align: justify; }
+      main section .box h1, main section .box h2, main section .box h3, main section .box h4, main section .box h5, main section .box h6 {
+        text-align: left; }
     main section:nth-child(even) {
       background-color: #fff; }
     main section.page-header {
@@ -1025,10 +1039,12 @@ main {
       background-repeat: no-repeat;
       background-size: cover; }
       main section.page-header h1, main section.page-header h2 {
+        color: #fff;
+        text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25), 0 0 3px rgba(0, 0, 0, 0.75);
         font-family: 'PT Serif';
         text-align: center;
         margin: 0;
-        line-height: 1; }
+        line-height: 1.2; }
       main section.page-header h1 {
         font-size: 4.75rem; }
       main section.page-header h2 {
@@ -1054,4 +1070,4 @@ main {
       main section.page-header {
         min-height: 50rem; } }
 
-/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJjc3Mvc3R5bGVzLTgyNzRkNzU5ZWRlYzhhOTE5YzkzLmNzcyIsInNvdXJjZVJvb3QiOiIifQ==*/
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJjc3Mvc3R5bGVzLThjNWM4ZGUwZWJmYzIwNjY5OTQ5LmNzcyIsInNvdXJjZVJvb3QiOiIifQ==*/
