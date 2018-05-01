@@ -4,8 +4,8 @@ const Portraits = () => (
   <div className="prices-portraits">
     <section className="page-header">
       <div>
-        <h1>Priser</h1>
-        <h2>Porträtt</h2>
+        <h1>Porträtt</h1>
+        <h2>Priser</h2>
       </div>
     </section>
     <section>

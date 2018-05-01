@@ -12,8 +12,12 @@ const Contact = () => (
     <section>
       <h2>Om mig</h2>
       <article>
-        <p>Lorem ipsum dolor sit amet, in mel sapientem periculis, augue evertitur an cum. Ut eam illum omittantur appellantur. Erat soluta fabulas vis ex, ad eam fabulas electram. Usu aeterno disputando no, at nibh nostro urbanitas sed. An option audire eum, his falli indoctum at, solum quando cotidieque no ius. Vero sonet contentiones vis ei.</p>
-        <p>Et mea quot viris erroribus. Ex recteque mediocrem est, inimicus consequat ea sit, id ius voluptua dissentias. Vim an ridens omnium officiis. Meis nostro mel at, per ad purto hendrerit. Mel ut discere indoctum scribentur, sit mutat mediocritatem ad, usu an recteque interesset liberavisse.</p>
+        <p><strong>Hej och vad kul att du hittat hit!</strong></p>
+        <p>Jag började knäppa bilder som en galning när jag, för 10 år sedan, fick min första digitalkamera i studentpresent. Fotograferandet växte snabbt till en stor passion och kameran hängde, då som nu, konstant på min axel. Mitt fotograferande har, allt sedan denna min första kamera, lett mig till en massa äventyr och tusen oförglömliga möten.</p>
+        <p>Då jag med tiden fått fler och fler fotouppdrag har fotograferandet successivt övergått från hobby till arbete. Jag innehar sedan 1 januari 2015 F-skattsedel och tänker mig snart kunna försörja mig helt och hållet på fotograferandet. Mest av allt tycker jag om att arbeta i naturligt ljus och brinner för att spegla människor och möten på ett spontant och okonstlat vis.</p>
+        <p>Jag är baserad i Växjö men jobbar lite varstans. Kan alltså tänka mig uppdrag i världens alla hörn.</p>
+        <p>Hör gärna av dig!</p>
+        <p><em>- Alexander</em></p>
       </article>
     </section>
     <section>
